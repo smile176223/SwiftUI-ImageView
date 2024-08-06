@@ -32,8 +32,7 @@ struct ControlView: View {
             )
             .listRowBackground(Color.clear)
             .listRowSeparator(.hidden)
-            .onTapGesture {}
-            
+
             AspectRatioView(
                 isAspectRatio: $isAspectRatio,
                 contentMode: $contentMode,
@@ -41,7 +40,6 @@ struct ControlView: View {
             )
             .listRowBackground(Color.clear)
             .listRowSeparator(.hidden)
-            .onTapGesture {}
         }
         .listStyle(PlainListStyle())
         .padding(.top, 20)
