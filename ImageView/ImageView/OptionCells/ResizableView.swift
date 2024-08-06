@@ -27,7 +27,7 @@ struct ResizableView: View {
                             .cornerRadius(10)
                     }
                     .foregroundStyle(.white)
-                    .font(.system(size: 17))
+                    .font(.system(size: 16))
                     .bold()
                     .onTapGesture {
                         isResizable.toggle()
@@ -35,11 +35,7 @@ struct ResizableView: View {
                 Spacer()
             }
             
-            if isResizable {
-                Text("✅")
-            } else {
-                Text("❌")
-            }
+            ToggleView(isToggle: $isResizable)
             
             if isResizable {
                 HStack(alignment: .center) {
