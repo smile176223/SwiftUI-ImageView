@@ -35,8 +35,6 @@ struct ResizableView: View {
                 Spacer()
             }
             
-            ToggleView(isToggle: $isResizable)
-            
             if isResizable {
                 HStack(alignment: .center) {
                     Spacer()
@@ -74,9 +72,9 @@ struct ResizableView: View {
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color.white)
                 .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
+                .setBorder(isResizable)
         )
     }
-    
 }
 
 #Preview {
@@ -87,6 +85,7 @@ struct ResizableView: View {
         @State private var leading: CGFloat = 0
         @State private var trailing: CGFloat = 0
         @State private var resizingMode: Image.ResizingMode = .stretch
+        @State private var isExpanded: Bool = true
         
         var body: some View {
             ResizableView(

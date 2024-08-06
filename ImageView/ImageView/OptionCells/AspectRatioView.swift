@@ -32,8 +32,6 @@ struct AspectRatioView: View {
                 Spacer()
             }
             
-            ToggleView(isToggle: $isAspectRatio)
-            
             if isAspectRatio {
                 
                 InfoView(title: "Content Mode : ") {
@@ -51,6 +49,7 @@ struct AspectRatioView: View {
             RoundedRectangle(cornerRadius: 10)
                 .fill(Color.white)
                 .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
+                .setBorder(isAspectRatio)
         )
     }
 }
