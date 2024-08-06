@@ -16,23 +16,37 @@ struct ResizableView: View {
     @Binding var resizingMode: Image.ResizingMode
     
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack(alignment: .center) {
+            
             HStack {
-                InfoView(title: "Resizable :") {
-                    Button {
-                        isResizable.toggle()
-                    } label: {
-                        Text("\(isResizable)")
-                            .foregroundStyle(Color.blue)
-                    }
-                }
                 Spacer()
+                Text("resizable(capInsets:resizingMode:)")
+                    .padding()
+                    .background {
+                        Color.gray
+                            .cornerRadius(10)
+                    }
+                    .foregroundStyle(.white)
+                    .font(.system(size: 17))
+                    .bold()
+                    .onTapGesture {
+                        isResizable.toggle()
+                    }
+                Spacer()
+            }
+            
+            if isResizable {
+                Text("✅")
+            } else {
+                Text("❌")
             }
             
             if isResizable {
                 HStack(alignment: .center) {
                     Spacer()
                     Text("CapInset")
+                        .bold()
+                        .font(.headline)
                     Spacer()
                 }
                 .padding(.top, 10)
@@ -87,6 +101,7 @@ struct ResizableView: View {
                 trailing: $trailing,
                 resizingMode: $resizingMode
             )
+            .padding()
         }
     }
     

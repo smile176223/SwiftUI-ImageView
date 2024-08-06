@@ -36,7 +36,7 @@ struct ContentView: View {
                 }
             }
             .pickerStyle(.segmented)
-            .padding(.top, 10)
+            .padding([.all], 10)
             
             Spacer()
             
@@ -72,6 +72,7 @@ struct ContentView: View {
                         trailing: $trailing,
                         resizingMode: $resizingMode
                     )
+                    .ignoresSafeArea()
                     .presentationDetents([.fraction(0.1), .medium, .large])
                     .presentationDragIndicator(.visible)
                     .presentationBackgroundInteraction(.enabled)
