@@ -22,4 +22,12 @@ extension Image {
             return self
         }
     }
+    
+    func setAspectRatio(_ isSet: Bool = true, aspectRatio: CGFloat? = nil, contentMode: ContentMode) -> AnyView {
+        if isSet {
+            return AnyView(self.aspectRatio(aspectRatio, contentMode: contentMode))
+        } else {
+            return AnyView(self)
+        }
+    }
 }

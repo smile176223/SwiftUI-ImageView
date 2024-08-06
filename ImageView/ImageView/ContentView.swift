@@ -14,14 +14,20 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var isSheetPresented = true
+    
+    // # resizable
     @State private var isResizable = true
     @State private var cornerRadius: Double = 25
     @State private var contentMode: ContentMode = .fit
-    @State private var top: CGFloat = 20
-    @State private var bottom: CGFloat = 20
-    @State private var leading: CGFloat = 20
-    @State private var trailing: CGFloat = 20
+    @State private var top: CGFloat = 0
+    @State private var bottom: CGFloat = 0
+    @State private var leading: CGFloat = 0
+    @State private var trailing: CGFloat = 0
     @State private var resizingMode: Image.ResizingMode = .stretch
+    
+    // # aspectRatio
+    @State private var isAspectRatio = true
+    @State private var aspectRatioContentMode: ContentMode = .fit
     
     private let imageResources: [ImageResource] = [.image0, .image1]
     @State private var currentImageResource: ImageResource = .image0
@@ -52,7 +58,10 @@ struct ContentView: View {
                         ),
                         resizingMode: resizingMode
                     )
-                    .aspectRatio(contentMode: contentMode)
+                    .setAspectRatio(
+                        isAspectRatio,
+                        contentMode: aspectRatioContentMode
+                    )
                     .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
             }
             .frame(width: 500, height: 500)
