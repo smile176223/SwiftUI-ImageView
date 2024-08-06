@@ -9,6 +9,8 @@ import SwiftUI
 
 struct AspectRatioView: View {
     @Binding var isAspectRatio: Bool
+    @Binding var contentMode: ContentMode
+    @Binding var aspectRatio: CGFloat?
     
     var body: some View {
         VStack(alignment: .center) {
@@ -34,6 +36,14 @@ struct AspectRatioView: View {
             
             if isAspectRatio {
                 
+                InfoView(title: "Content Mode : ") {
+                    Picker("Content Mode", selection: $contentMode) {
+                        ForEach(ContentMode.allCases) { mode in
+                            Text("\(mode)")
+                        }
+                    }
+                    .pickerStyle(.segmented)
+                }
             }
         }
         .padding()
@@ -48,10 +58,14 @@ struct AspectRatioView: View {
 #Preview {
     struct AspectRatioViewPreview: View {
         @State private var isAspectRatio: Bool = true
+        @State private var contentMode: ContentMode = .fit
+        @State private var aspectRatio: CGFloat? = nil
         
         var body: some View {
             AspectRatioView(
-                isAspectRatio: $isAspectRatio
+                isAspectRatio: $isAspectRatio,
+                contentMode: $contentMode,
+                aspectRatio: $aspectRatio
             )
             .padding()
         }

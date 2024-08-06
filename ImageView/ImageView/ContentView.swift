@@ -18,7 +18,6 @@ struct ContentView: View {
     // # resizable
     @State private var isResizable = true
     @State private var cornerRadius: Double = 25
-    @State private var contentMode: ContentMode = .fit
     @State private var top: CGFloat = 0
     @State private var bottom: CGFloat = 0
     @State private var leading: CGFloat = 0
@@ -27,7 +26,8 @@ struct ContentView: View {
     
     // # aspectRatio
     @State private var isAspectRatio = true
-    @State private var aspectRatioContentMode: ContentMode = .fit
+    @State private var contentMode: ContentMode = .fit
+    @State private var aspectRatio: CGFloat? = nil
     
     private let imageResources: [ImageResource] = [.image0, .image1]
     @State private var currentImageResource: ImageResource = .image0
@@ -45,6 +45,7 @@ struct ContentView: View {
             .padding([.all], 10)
             
             Spacer()
+                .frame(height: 10)
             
             ZStack {
                 Image(currentImageResource)
@@ -60,11 +61,13 @@ struct ContentView: View {
                     )
                     .setAspectRatio(
                         isAspectRatio,
-                        contentMode: aspectRatioContentMode
+                        aspectRatio: aspectRatio,
+                        contentMode: contentMode
                     )
-                    .clipShape(RoundedRectangle(cornerRadius: cornerRadius))
+                    .frame(width: UIScreen.main.bounds.width - 32, height: 400)
+                    .clipped()
             }
-            .frame(width: 500, height: 500)
+            .border(.orange, width: 5)
             
             Spacer()
             
@@ -74,12 +77,14 @@ struct ContentView: View {
                     ControlView(
                         isResizable: $isResizable,
                         cornerRadius: $cornerRadius,
-                        contentMode: $contentMode,
                         top: $top,
                         bottom: $bottom,
                         leading: $leading,
                         trailing: $trailing,
-                        resizingMode: $resizingMode
+                        resizingMode: $resizingMode,
+                        isAspectRatio: $isAspectRatio,
+                        contentMode: $contentMode,
+                        aspectRatio: $aspectRatio
                     )
                     .ignoresSafeArea()
                     .presentationDetents([.fraction(0.1), .medium, .large])
