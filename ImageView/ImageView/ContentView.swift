@@ -87,11 +87,17 @@ struct ContentView: View {
                         aspectRatio: $aspectRatio
                     )
                     .ignoresSafeArea()
-                    .presentationDetents([.fraction(0.1), .medium, .large])
+                    .presentationDetents([.fraction(0.4), .medium, .large])
                     .presentationDragIndicator(.visible)
                     .presentationBackgroundInteraction(.enabled)
                     .interactiveDismissDisabled()
                 }
+        }
+        .background {
+            Color
+                .gray
+                .opacity(0.3)
+                .ignoresSafeArea()
         }
     }
 }
