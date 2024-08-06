@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension Image.ResizingMode: @retroactive CaseIterable, @retroactive Identifiable {
+extension Image.ResizingMode: CaseIterable, Identifiable {
     public static var allCases: [Image.ResizingMode] = [.stretch, .tile]
     
     public var id: Self { self }

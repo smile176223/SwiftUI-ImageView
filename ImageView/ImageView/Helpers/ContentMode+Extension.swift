@@ -7,6 +7,6 @@
 
 import SwiftUI
 
-extension ContentMode: @retroactive Identifiable {
+extension ContentMode: Identifiable {
     public var id: Self { self }
 }

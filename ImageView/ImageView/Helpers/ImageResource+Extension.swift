@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-extension ImageResource: @retroactive Identifiable {
+extension ImageResource: Identifiable {
     public var id: Self { self }
     
     var name: String {
