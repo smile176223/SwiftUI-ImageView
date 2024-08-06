@@ -28,3 +28,9 @@ struct InfoView: View {
         .padding([.leading, .trailing], 16)
     }
 }
+
+#Preview {
+    InfoView(title: "Title") {
+        Color.black
+    }
+}
