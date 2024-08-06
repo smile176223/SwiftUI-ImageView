@@ -59,7 +59,6 @@ struct ResizableView: View {
                 }
             }
         }
-        .frame(width: UIScreen.main.bounds.width - 64)
         .padding()
         .background(
             RoundedRectangle(cornerRadius: 10)

@@ -16,6 +16,7 @@
 		0CBE64572C619DF500E8A2FB /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64562C619DF500E8A2FB /* InfoView.swift */; };
 		0CBE645A2C619E1F00E8A2FB /* ContentMode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64592C619E1F00E8A2FB /* ContentMode+Extension.swift */; };
 		0CBE645C2C619E3F00E8A2FB /* Image+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE645B2C619E3F00E8A2FB /* Image+Extension.swift */; };
+		0CBE645E2C61ADFF00E8A2FB /* ImageResource+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE645D2C61ADFF00E8A2FB /* ImageResource+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		0CBE64562C619DF500E8A2FB /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		0CBE64592C619E1F00E8A2FB /* ContentMode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentMode+Extension.swift"; sourceTree = "<group>"; };
 		0CBE645B2C619E3F00E8A2FB /* Image+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Extension.swift"; sourceTree = "<group>"; };
+		0CBE645D2C61ADFF00E8A2FB /* ImageResource+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageResource+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 			children = (
 				0CBE64592C619E1F00E8A2FB /* ContentMode+Extension.swift */,
 				0CBE645B2C619E3F00E8A2FB /* Image+Extension.swift */,
+				0CBE645D2C61ADFF00E8A2FB /* ImageResource+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CBE645C2C619E3F00E8A2FB /* Image+Extension.swift in Sources */,
+				0CBE645E2C61ADFF00E8A2FB /* ImageResource+Extension.swift in Sources */,
 				0CBE64552C619D4000E8A2FB /* ControlView.swift in Sources */,
 				0CBE64472C6057CD00E8A2FB /* ContentView.swift in Sources */,
 				0CBE645A2C619E1F00E8A2FB /* ContentMode+Extension.swift in Sources */,
