@@ -48,6 +48,7 @@ struct ModifierList: View {
                 ForEach(searchResults, id: \.self) { modifier in
                     NavigationLink(value: modifier) {
                         Text(modifier.title)
+                            .foregroundStyle(.black)
                             .font(.system(size: 16))
                             .bold()
                     }
@@ -64,7 +65,13 @@ struct ModifierList: View {
             .listStyle(PlainListStyle())
             .padding([.top, .bottom], 5)
             .navigationTitle("Image Modifiers")
-            .navigationDestination(for: Modifier.self) { $0.view() }
+            .navigationDestination(for: Modifier.self) { modifier in
+                List {
+                    modifier.view()
+                        .listRowSeparator(.hidden)
+                }
+                .listStyle(.plain)
+            }
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
         .animation(.default, value: searchResults)
