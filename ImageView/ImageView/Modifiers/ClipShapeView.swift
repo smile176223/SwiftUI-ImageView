@@ -30,9 +30,6 @@ struct ClipShapeView: View {
         case custom
     }
     
-    @State private var height: CGFloat = 300
-    @State private var width: CGFloat = 300
-    
     private let images: [ImageResource] = [.image0, .image1]
     @State private var currentImage: ImageResource = .image0
     
@@ -60,17 +57,17 @@ struct ClipShapeView: View {
                 case .circle:
                     Image(currentImage)
                         .resizable()
-                        .frame(width: width, height: height)
+                        .frame(width: 300, height: 300)
                         .clipShape(Circle())
                 case .rectangle:
                     Image(currentImage)
                         .resizable()
-                        .frame(width: width, height: height)
+                        .frame(width: 300, height: 300)
                         .clipShape(Rectangle())
                 case .custom:
                     Image(currentImage)
                         .resizable()
-                        .frame(width: width, height: height)
+                        .frame(width: 300, height: 300)
                         .clipShape(Diamond())
                 }
             }
@@ -85,13 +82,6 @@ struct ClipShapeView: View {
                     }
                 }
                 .pickerStyle(.segmented)
-            }
-            
-            InfoView(title: "width :  \(String(format: "%.1f", width))") {
-                Slider(value: $width, in: 0...600)
-            }
-            InfoView(title: "height :  \(String(format: "%.1f", height))") {
-                Slider(value: $height, in: 0...600)
             }
         }
     }
