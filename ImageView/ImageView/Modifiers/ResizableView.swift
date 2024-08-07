@@ -33,6 +33,8 @@ struct ResizableView: View {
             .padding([.top, .bottom], 0)
             .padding([.leading, .trailing], 16)
             
+            Spacer()
+            
             ZStack {
                 Image(currentImage)
                     .resizable(
@@ -48,6 +50,8 @@ struct ResizableView: View {
             .frame(width: 300, height: 300)
             .border(.orange, width: 3)
             .padding()
+            
+            Spacer()
             
             HStack {
                 Text("CapInsets :")
