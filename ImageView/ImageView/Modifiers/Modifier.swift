@@ -93,6 +93,8 @@ public enum Modifier: Hashable {
             CornerRadiusView()
         case .opacity:
             OpacityView()
+        case .shadow:
+            ShadowView()
         default:
             Text("Need to implement...")
         }

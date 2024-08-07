@@ -25,6 +25,7 @@
 		0CBE64762C635B1D00E8A2FB /* ClipShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64752C635B1D00E8A2FB /* ClipShapeView.swift */; };
 		0CBE64782C63637800E8A2FB /* CornerRadiusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64772C63637800E8A2FB /* CornerRadiusView.swift */; };
 		0CBE647A2C6364C000E8A2FB /* OpacityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64792C6364C000E8A2FB /* OpacityView.swift */; };
+		0CBE647C2C63684A00E8A2FB /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE647B2C63684A00E8A2FB /* ShadowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +48,7 @@
 		0CBE64752C635B1D00E8A2FB /* ClipShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShapeView.swift; sourceTree = "<group>"; };
 		0CBE64772C63637800E8A2FB /* CornerRadiusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusView.swift; sourceTree = "<group>"; };
 		0CBE64792C6364C000E8A2FB /* OpacityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityView.swift; sourceTree = "<group>"; };
+		0CBE647B2C63684A00E8A2FB /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				0CBE64752C635B1D00E8A2FB /* ClipShapeView.swift */,
 				0CBE64772C63637800E8A2FB /* CornerRadiusView.swift */,
 				0CBE64792C6364C000E8A2FB /* OpacityView.swift */,
+				0CBE647B2C63684A00E8A2FB /* ShadowView.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				0CBE64722C63496700E8A2FB /* AspectRatioView.swift in Sources */,
 				0CBE64682C6321E100E8A2FB /* ResizableView.swift in Sources */,
 				0CBE64742C63598A00E8A2FB /* FrameView.swift in Sources */,
+				0CBE647C2C63684A00E8A2FB /* ShadowView.swift in Sources */,
 				0CBE64572C619DF500E8A2FB /* InfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
