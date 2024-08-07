@@ -85,6 +85,8 @@ public enum Modifier: Hashable {
             ScaledToFillView()
         case .aspectRatio:
             AspectRatioView()
+        case .frame:
+            FrameView()
         default:
             EmptyView()
         }
