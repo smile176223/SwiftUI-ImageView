@@ -1,5 +1,5 @@
 //
-//  AspectRatioView.swift
+//  AspectRatioCellView.swift
 //  ImageView
 //
 //  Created by Liam on 2024/8/6.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AspectRatioView: View {
+struct AspectRatioCellView: View {
     @Binding var isAspectRatio: Bool
     @Binding var contentMode: ContentMode
     @Binding var aspectRatio: CGFloat?
@@ -55,13 +55,13 @@ struct AspectRatioView: View {
 }
 
 #Preview {
-    struct AspectRatioViewPreview: View {
+    struct AspectRatioCellViewPreview: View {
         @State private var isAspectRatio: Bool = true
         @State private var contentMode: ContentMode = .fit
         @State private var aspectRatio: CGFloat? = nil
         
         var body: some View {
-            AspectRatioView(
+            AspectRatioCellView(
                 isAspectRatio: $isAspectRatio,
                 contentMode: $contentMode,
                 aspectRatio: $aspectRatio
@@ -70,5 +70,5 @@ struct AspectRatioView: View {
         }
     }
     
-    return AspectRatioViewPreview()
+    return AspectRatioCellViewPreview()
 }

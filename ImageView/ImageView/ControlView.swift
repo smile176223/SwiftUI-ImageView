@@ -22,7 +22,7 @@ struct ControlView: View {
     
     var body: some View {
         List {
-            ResizableView(
+            ResizableCellView(
                 isResizable: $isResizable,
                 top: $top,
                 bottom: $bottom,
@@ -33,7 +33,7 @@ struct ControlView: View {
             .listRowBackground(Color.clear)
             .listRowSeparator(.hidden)
 
-            AspectRatioView(
+            AspectRatioCellView(
                 isAspectRatio: $isAspectRatio,
                 contentMode: $contentMode,
                 aspectRatio: $aspectRatio

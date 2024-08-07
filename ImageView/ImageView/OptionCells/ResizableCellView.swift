@@ -1,5 +1,5 @@
 //
-//  ResizableView.swift
+//  ResizableCellView.swift
 //  ImageView
 //
 //  Created by Liam on 2024/8/5.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ResizableView: View {
+struct ResizableCellView: View {
     @Binding var isResizable: Bool
     @Binding var top: CGFloat
     @Binding var bottom: CGFloat
@@ -78,7 +78,7 @@ struct ResizableView: View {
 }
 
 #Preview {
-    struct ResizableViewPreview: View {
+    struct ResizableCellViewPreview: View {
         @State private var isResizable: Bool = true
         @State private var top: CGFloat = 0
         @State private var bottom: CGFloat = 0
@@ -88,7 +88,7 @@ struct ResizableView: View {
         @State private var isExpanded: Bool = true
         
         var body: some View {
-            ResizableView(
+            ResizableCellView(
                 isResizable: $isResizable,
                 top: $top,
                 bottom: $bottom,
@@ -100,5 +100,5 @@ struct ResizableView: View {
         }
     }
     
-    return ResizableViewPreview()
+    return ResizableCellViewPreview()
 }

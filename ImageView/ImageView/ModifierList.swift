@@ -47,7 +47,7 @@ struct ModifierList: View {
             List {
                 ForEach(searchResults, id: \.self) { modifier in
                     NavigationLink {
-                        
+                        ResizableView()
                     } label: {
                         Text(modifier)
                             .font(.system(size: 16))
