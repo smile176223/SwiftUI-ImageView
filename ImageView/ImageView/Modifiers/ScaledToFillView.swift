@@ -28,6 +28,7 @@ struct ScaledToFillView: View {
             .padding([.leading, .trailing], 16)
             
             Spacer()
+                .frame(height: 80)
             
             ZStack {
                 Image(currentImage)

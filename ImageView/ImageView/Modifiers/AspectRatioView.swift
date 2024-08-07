@@ -34,6 +34,7 @@ struct AspectRatioView: View {
             .padding([.leading, .trailing], 16)
             
             Spacer()
+                .frame(height: 80)
             
             ZStack {
                 Image(currentImage)
@@ -48,6 +49,7 @@ struct AspectRatioView: View {
             .padding()
             
             Spacer()
+                .frame(height: 80)
             
             HStack {
                 Text("AspectRatio")
