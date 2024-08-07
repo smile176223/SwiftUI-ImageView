@@ -23,6 +23,7 @@
 		0CBE646C2C633F9400E8A2FB /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE646B2C633F9400E8A2FB /* Modifier.swift */; };
 		0CBE646E2C63474A00E8A2FB /* ScaledToFitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE646D2C63474A00E8A2FB /* ScaledToFitView.swift */; };
 		0CBE64702C6347C000E8A2FB /* ScaledToFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE646F2C6347C000E8A2FB /* ScaledToFillView.swift */; };
+		0CBE64722C63496700E8A2FB /* AspectRatioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64712C63496700E8A2FB /* AspectRatioView.swift */; };
 		FFCEDDE22C6278320037CA79 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCEDDE12C6278320037CA79 /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +45,7 @@
 		0CBE646B2C633F9400E8A2FB /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
 		0CBE646D2C63474A00E8A2FB /* ScaledToFitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledToFitView.swift; sourceTree = "<group>"; };
 		0CBE646F2C6347C000E8A2FB /* ScaledToFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledToFillView.swift; sourceTree = "<group>"; };
+		0CBE64712C63496700E8A2FB /* AspectRatioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioView.swift; sourceTree = "<group>"; };
 		FFCEDDE12C6278320037CA79 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -134,6 +136,7 @@
 				0CBE64672C6321E100E8A2FB /* ResizableView.swift */,
 				0CBE646D2C63474A00E8A2FB /* ScaledToFitView.swift */,
 				0CBE646F2C6347C000E8A2FB /* ScaledToFillView.swift */,
+				0CBE64712C63496700E8A2FB /* AspectRatioView.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				0CBE645A2C619E1F00E8A2FB /* ContentMode+Extension.swift in Sources */,
 				0CBE646C2C633F9400E8A2FB /* Modifier.swift in Sources */,
 				0CBE64452C6057CD00E8A2FB /* ImageViewApp.swift in Sources */,
+				0CBE64722C63496700E8A2FB /* AspectRatioView.swift in Sources */,
 				0CBE64682C6321E100E8A2FB /* ResizableView.swift in Sources */,
 				0CBE64602C61B5DF00E8A2FB /* AspectRatioCellView.swift in Sources */,
 				FFCEDDE22C6278320037CA79 /* View+Extension.swift in Sources */,
