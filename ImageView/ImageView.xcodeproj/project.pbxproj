@@ -24,6 +24,7 @@
 		0CBE64742C63598A00E8A2FB /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64732C63598A00E8A2FB /* FrameView.swift */; };
 		0CBE64762C635B1D00E8A2FB /* ClipShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64752C635B1D00E8A2FB /* ClipShapeView.swift */; };
 		0CBE64782C63637800E8A2FB /* CornerRadiusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64772C63637800E8A2FB /* CornerRadiusView.swift */; };
+		0CBE647A2C6364C000E8A2FB /* OpacityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64792C6364C000E8A2FB /* OpacityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +46,7 @@
 		0CBE64732C63598A00E8A2FB /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
 		0CBE64752C635B1D00E8A2FB /* ClipShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShapeView.swift; sourceTree = "<group>"; };
 		0CBE64772C63637800E8A2FB /* CornerRadiusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadiusView.swift; sourceTree = "<group>"; };
+		0CBE64792C6364C000E8A2FB /* OpacityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpacityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				0CBE64732C63598A00E8A2FB /* FrameView.swift */,
 				0CBE64752C635B1D00E8A2FB /* ClipShapeView.swift */,
 				0CBE64772C63637800E8A2FB /* CornerRadiusView.swift */,
+				0CBE64792C6364C000E8A2FB /* OpacityView.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CBE647A2C6364C000E8A2FB /* OpacityView.swift in Sources */,
 				0CBE64662C630DF400E8A2FB /* ModifierList.swift in Sources */,
 				0CBE64782C63637800E8A2FB /* CornerRadiusView.swift in Sources */,
 				0CBE645C2C619E3F00E8A2FB /* Image+Extension.swift in Sources */,

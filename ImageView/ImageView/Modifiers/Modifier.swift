@@ -91,6 +91,8 @@ public enum Modifier: Hashable {
             ClipShapeView()
         case .cornerRadius:
             CornerRadiusView()
+        case .opacity:
+            OpacityView()
         default:
             EmptyView()
         }
