@@ -52,7 +52,7 @@ struct AspectRatioView: View {
                 .frame(height: 80)
             
             HStack {
-                Text("AspectRatio")
+                Text("AspectRatio (CGFloat / CGSize)")
                     .bold()
                 
                 Toggle("", isOn: $isRatioOn)
