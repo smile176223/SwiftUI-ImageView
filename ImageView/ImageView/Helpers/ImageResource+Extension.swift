@@ -13,9 +13,9 @@ extension ImageResource: Identifiable {
     var name: String {
         switch self {
         case .image0:
-            return "Big"
+            return "Image"
         case .image1:
-            return "Small"
+            return "Icon"
         default:
             return "Unknown"
         }
