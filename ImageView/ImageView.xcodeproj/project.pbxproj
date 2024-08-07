@@ -25,6 +25,7 @@
 		0CBE64702C6347C000E8A2FB /* ScaledToFillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE646F2C6347C000E8A2FB /* ScaledToFillView.swift */; };
 		0CBE64722C63496700E8A2FB /* AspectRatioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64712C63496700E8A2FB /* AspectRatioView.swift */; };
 		0CBE64742C63598A00E8A2FB /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64732C63598A00E8A2FB /* FrameView.swift */; };
+		0CBE64762C635B1D00E8A2FB /* ClipShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64752C635B1D00E8A2FB /* ClipShapeView.swift */; };
 		FFCEDDE22C6278320037CA79 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCEDDE12C6278320037CA79 /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,6 +49,7 @@
 		0CBE646F2C6347C000E8A2FB /* ScaledToFillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScaledToFillView.swift; sourceTree = "<group>"; };
 		0CBE64712C63496700E8A2FB /* AspectRatioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AspectRatioView.swift; sourceTree = "<group>"; };
 		0CBE64732C63598A00E8A2FB /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		0CBE64752C635B1D00E8A2FB /* ClipShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClipShapeView.swift; sourceTree = "<group>"; };
 		FFCEDDE12C6278320037CA79 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -140,6 +142,7 @@
 				0CBE646F2C6347C000E8A2FB /* ScaledToFillView.swift */,
 				0CBE64712C63496700E8A2FB /* AspectRatioView.swift */,
 				0CBE64732C63598A00E8A2FB /* FrameView.swift */,
+				0CBE64752C635B1D00E8A2FB /* ClipShapeView.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -222,6 +225,7 @@
 				0CBE64472C6057CD00E8A2FB /* ContentView.swift in Sources */,
 				0CBE646E2C63474A00E8A2FB /* ScaledToFitView.swift in Sources */,
 				0CBE645A2C619E1F00E8A2FB /* ContentMode+Extension.swift in Sources */,
+				0CBE64762C635B1D00E8A2FB /* ClipShapeView.swift in Sources */,
 				0CBE646C2C633F9400E8A2FB /* Modifier.swift in Sources */,
 				0CBE64452C6057CD00E8A2FB /* ImageViewApp.swift in Sources */,
 				0CBE64722C63496700E8A2FB /* AspectRatioView.swift in Sources */,

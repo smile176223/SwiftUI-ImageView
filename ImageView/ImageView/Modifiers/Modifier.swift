@@ -87,6 +87,8 @@ public enum Modifier: Hashable {
             AspectRatioView()
         case .frame:
             FrameView()
+        case .clipShape:
+            ClipShapeView()
         default:
             EmptyView()
         }
