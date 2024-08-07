@@ -41,7 +41,7 @@ struct ClipShapeView: View {
     var body: some View {
         VStack {
             
-            Text(Modifier.frame.title)
+            Text(Modifier.clipShape.title)
                 .padding()
             
             Picker("Images", selection: $currentImage) {

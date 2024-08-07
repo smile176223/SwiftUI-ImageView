@@ -89,6 +89,8 @@ public enum Modifier: Hashable {
             FrameView()
         case .clipShape:
             ClipShapeView()
+        case .cornerRadius:
+            CornerRadiusView()
         default:
             EmptyView()
         }
