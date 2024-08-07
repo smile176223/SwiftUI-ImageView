@@ -74,7 +74,13 @@ public enum Modifier: Hashable {
         }
     }
     
+    @ViewBuilder
     public func view() -> some View {
-        ResizableView()
+        switch self {
+        case .resizable:
+            ResizableView()
+        default:
+            EmptyView()
+        }
     }
 }

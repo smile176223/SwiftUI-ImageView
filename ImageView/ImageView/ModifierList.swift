@@ -64,9 +64,7 @@ struct ModifierList: View {
             .listStyle(PlainListStyle())
             .padding([.top, .bottom], 5)
             .navigationTitle("Image Modifiers")
-            .navigationDestination(for: Modifier.self) { modifier in
-                modifier.view()
-            }
+            .navigationDestination(for: Modifier.self) { $0.view() }
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
         .animation(.default, value: searchResults)
