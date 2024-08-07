@@ -79,6 +79,10 @@ public enum Modifier: Hashable {
         switch self {
         case .resizable:
             ResizableView()
+        case .scaledToFit:
+            ScaledToFitView()
+        case .scaledToFill:
+            ScaledToFillView()
         default:
             EmptyView()
         }
