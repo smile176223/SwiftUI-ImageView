@@ -94,7 +94,7 @@ public enum Modifier: Hashable {
         case .opacity:
             OpacityView()
         default:
-            EmptyView()
+            Text("Need to implement...")
         }
     }
 }
