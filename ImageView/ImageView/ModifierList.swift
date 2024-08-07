@@ -9,34 +9,34 @@ import SwiftUI
 
 struct ModifierList: View {
     
-    private let modifiers = [
-        "resizable(capInsets:resizingMode:)",
-        "scaledToFit()",
-        "scaledToFill()",
-        "aspectRatio(_:contentMode:)",
-        "frame(width:height:alignment:)",
-        "clipShape(_:)",
-        "cornerRadius(_:)",
-        "opacity(_:)",
-        "shadow(color:radius:x:y:)",
-        "overlay(_:alignment:)",
-        "border(_:width:)",
-        "background(_:)",
-        "blendMode(_:)",
-        "brightness(_:)",
-        "contrast(_:)",
-        "saturation(_:)",
-        "hueRotation(_:)",
-        "grayscale(_:)",
-        "blur(radius:opaque:)",
-        "rotationEffect(_:anchor:)",
+    private var modifiers: [Modifier] = [
+        .resizable,
+        .scaledToFit,
+        .scaledToFill,
+        .aspectRatio,
+        .frame,
+        .clipShape,
+        .cornerRadius,
+        .opacity,
+        .shadow,
+        .overlay,
+        .border,
+        .background,
+        .blendMode,
+        .brightness,
+        .contrast,
+        .saturation,
+        .hueRotation,
+        .grayscale,
+        .blur,
+        .rotationEffect
     ]
     
-    private var searchResults: [String] {
+    private var searchResults: [Modifier] {
         if searchText.isEmpty {
             return modifiers
         } else {
-            return modifiers.filter { $0.lowercased().contains(searchText.lowercased()) }
+            return modifiers.filter { $0.title.lowercased().contains(searchText.lowercased()) }
         }
     }
     
@@ -46,10 +46,8 @@ struct ModifierList: View {
         NavigationStack {
             List {
                 ForEach(searchResults, id: \.self) { modifier in
-                    NavigationLink {
-                        ResizableView()
-                    } label: {
-                        Text(modifier)
+                    NavigationLink(value: modifier) {
+                        Text(modifier.title)
                             .font(.system(size: 16))
                             .bold()
                     }
@@ -61,12 +59,14 @@ struct ModifierList: View {
                             .fill(Color.white)
                             .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
                     )
-                    
                 }
             }
             .listStyle(PlainListStyle())
             .padding([.top, .bottom], 5)
             .navigationTitle("Image Modifiers")
+            .navigationDestination(for: Modifier.self) { modifier in
+                modifier.view()
+            }
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
         .animation(.default, value: searchResults)

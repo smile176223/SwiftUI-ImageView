@@ -21,6 +21,7 @@
 		0CBE64642C61B6F500E8A2FB /* ToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64632C61B6F500E8A2FB /* ToggleView.swift */; };
 		0CBE64662C630DF400E8A2FB /* ModifierList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64652C630DF400E8A2FB /* ModifierList.swift */; };
 		0CBE64682C6321E100E8A2FB /* ResizableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64672C6321E100E8A2FB /* ResizableView.swift */; };
+		0CBE646C2C633F9400E8A2FB /* Modifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE646B2C633F9400E8A2FB /* Modifier.swift */; };
 		FFCEDDE22C6278320037CA79 /* View+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCEDDE12C6278320037CA79 /* View+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +41,7 @@
 		0CBE64632C61B6F500E8A2FB /* ToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleView.swift; sourceTree = "<group>"; };
 		0CBE64652C630DF400E8A2FB /* ModifierList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifierList.swift; sourceTree = "<group>"; };
 		0CBE64672C6321E100E8A2FB /* ResizableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResizableView.swift; sourceTree = "<group>"; };
+		0CBE646B2C633F9400E8A2FB /* Modifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifier.swift; sourceTree = "<group>"; };
 		FFCEDDE12C6278320037CA79 /* View+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 		0CBE64692C63225500E8A2FB /* Modifiers */ = {
 			isa = PBXGroup;
 			children = (
+				0CBE646B2C633F9400E8A2FB /* Modifier.swift */,
 				0CBE64672C6321E100E8A2FB /* ResizableView.swift */,
 			);
 			path = Modifiers;
@@ -208,6 +211,7 @@
 				0CBE64552C619D4000E8A2FB /* ControlView.swift in Sources */,
 				0CBE64472C6057CD00E8A2FB /* ContentView.swift in Sources */,
 				0CBE645A2C619E1F00E8A2FB /* ContentMode+Extension.swift in Sources */,
+				0CBE646C2C633F9400E8A2FB /* Modifier.swift in Sources */,
 				0CBE64452C6057CD00E8A2FB /* ImageViewApp.swift in Sources */,
 				0CBE64682C6321E100E8A2FB /* ResizableView.swift in Sources */,
 				0CBE64602C61B5DF00E8A2FB /* AspectRatioCellView.swift in Sources */,
