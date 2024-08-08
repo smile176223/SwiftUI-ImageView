@@ -105,6 +105,8 @@ public enum Modifier: Hashable {
             BlendModeView()
         case .brightness:
             BrightnessView()
+        case .contrast:
+            ContrastView()
         default:
             Text("Need to implement...")
         }
