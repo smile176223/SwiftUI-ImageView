@@ -35,6 +35,7 @@
 		0CBE648A2C64B86100E8A2FB /* ContrastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64892C64B86100E8A2FB /* ContrastView.swift */; };
 		0CBE648C2C64BC0E00E8A2FB /* SaturationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE648B2C64BC0E00E8A2FB /* SaturationView.swift */; };
 		0CBE648E2C64BDC000E8A2FB /* HueRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE648D2C64BDC000E8A2FB /* HueRotationView.swift */; };
+		0CBE64902C64C00600E8A2FB /* GrayscaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE648F2C64C00600E8A2FB /* GrayscaleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -67,6 +68,7 @@
 		0CBE64892C64B86100E8A2FB /* ContrastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrastView.swift; sourceTree = "<group>"; };
 		0CBE648B2C64BC0E00E8A2FB /* SaturationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaturationView.swift; sourceTree = "<group>"; };
 		0CBE648D2C64BDC000E8A2FB /* HueRotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HueRotationView.swift; sourceTree = "<group>"; };
+		0CBE648F2C64C00600E8A2FB /* GrayscaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayscaleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				0CBE64892C64B86100E8A2FB /* ContrastView.swift */,
 				0CBE648B2C64BC0E00E8A2FB /* SaturationView.swift */,
 				0CBE648D2C64BDC000E8A2FB /* HueRotationView.swift */,
+				0CBE648F2C64C00600E8A2FB /* GrayscaleView.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -252,6 +255,7 @@
 				0CBE64762C635B1D00E8A2FB /* ClipShapeView.swift in Sources */,
 				0CBE646C2C633F9400E8A2FB /* Modifier.swift in Sources */,
 				0CBE64822C649C7700E8A2FB /* SharedImageView.swift in Sources */,
+				0CBE64902C64C00600E8A2FB /* GrayscaleView.swift in Sources */,
 				0CBE64862C64B1B500E8A2FB /* BlendModeView.swift in Sources */,
 				0CBE64452C6057CD00E8A2FB /* ImageViewApp.swift in Sources */,
 				0CBE64722C63496700E8A2FB /* AspectRatioView.swift in Sources */,

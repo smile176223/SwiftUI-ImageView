@@ -111,6 +111,8 @@ public enum Modifier: Hashable {
             SaturationView()
         case .hueRotation:
             HueRotationView()
+        case .grayscale:
+            GrayscaleView()
         default:
             Text("Need to implement...")
         }
