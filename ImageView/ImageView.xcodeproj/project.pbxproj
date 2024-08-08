@@ -31,6 +31,7 @@
 		0CBE64822C649C7700E8A2FB /* SharedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64812C649C7700E8A2FB /* SharedImageView.swift */; };
 		0CBE64842C64AFCB00E8A2FB /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64832C64AFCB00E8A2FB /* BackgroundView.swift */; };
 		0CBE64862C64B1B500E8A2FB /* BlendModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64852C64B1B400E8A2FB /* BlendModeView.swift */; };
+		0CBE64882C64B64B00E8A2FB /* BrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64872C64B64B00E8A2FB /* BrightnessView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		0CBE64812C649C7700E8A2FB /* SharedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedImageView.swift; sourceTree = "<group>"; };
 		0CBE64832C64AFCB00E8A2FB /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		0CBE64852C64B1B400E8A2FB /* BlendModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendModeView.swift; sourceTree = "<group>"; };
+		0CBE64872C64B64B00E8A2FB /* BrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,7 @@
 				0CBE647F2C64500B00E8A2FB /* BorderView.swift */,
 				0CBE64832C64AFCB00E8A2FB /* BackgroundView.swift */,
 				0CBE64852C64B1B400E8A2FB /* BlendModeView.swift */,
+				0CBE64872C64B64B00E8A2FB /* BrightnessView.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -230,6 +233,7 @@
 				0CBE645E2C61ADFF00E8A2FB /* ImageResource+Extension.swift in Sources */,
 				0CBE64472C6057CD00E8A2FB /* ContentView.swift in Sources */,
 				0CBE646E2C63474A00E8A2FB /* ScaledToFitView.swift in Sources */,
+				0CBE64882C64B64B00E8A2FB /* BrightnessView.swift in Sources */,
 				0CBE64802C64500B00E8A2FB /* BorderView.swift in Sources */,
 				0CBE645A2C619E1F00E8A2FB /* ContentMode+Extension.swift in Sources */,
 				0CBE647E2C636BB100E8A2FB /* OverlayView.swift in Sources */,
