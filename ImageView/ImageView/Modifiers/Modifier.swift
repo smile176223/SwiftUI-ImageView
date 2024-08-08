@@ -54,7 +54,7 @@ public enum Modifier: Hashable {
         case .border:
             return "border(_:width:)"
         case .background:
-            return "background(_:)"
+            return "background(alignment:content:)"
         case .blendMode:
             return "blendMode(_:)"
         case .brightness:
@@ -99,6 +99,8 @@ public enum Modifier: Hashable {
             OverlayView()
         case .border:
             BorderView()
+        case .background:
+            BackgroundView()
         default:
             Text("Need to implement...")
         }
