@@ -109,6 +109,8 @@ public enum Modifier: Hashable {
             ContrastView()
         case .saturation:
             SaturationView()
+        case .hueRotation:
+            HueRotationView()
         default:
             Text("Need to implement...")
         }
