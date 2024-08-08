@@ -95,6 +95,8 @@ public enum Modifier: Hashable {
             OpacityView()
         case .shadow:
             ShadowView()
+        case .overlay:
+            OverlayView()
         default:
             Text("Need to implement...")
         }
