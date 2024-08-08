@@ -32,7 +32,8 @@ struct SharedImageView<ImageView: View>: View {
         .pickerStyle(.segmented)
         .padding([.top, .bottom], 0)
         .padding([.leading, .trailing], 16)
-        
+        .zIndex(99)
+               
         Spacer()
         
         imageView(currentImage)
