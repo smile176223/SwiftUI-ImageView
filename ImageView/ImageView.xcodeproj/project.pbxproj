@@ -28,6 +28,7 @@
 		0CBE647C2C63684A00E8A2FB /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE647B2C63684A00E8A2FB /* ShadowView.swift */; };
 		0CBE647E2C636BB100E8A2FB /* OverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE647D2C636BB100E8A2FB /* OverlayView.swift */; };
 		0CBE64802C64500B00E8A2FB /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE647F2C64500B00E8A2FB /* BorderView.swift */; };
+		0CBE64822C649C7700E8A2FB /* SharedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64812C649C7700E8A2FB /* SharedImageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		0CBE647B2C63684A00E8A2FB /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		0CBE647D2C636BB100E8A2FB /* OverlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OverlayView.swift; sourceTree = "<group>"; };
 		0CBE647F2C64500B00E8A2FB /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		0CBE64812C649C7700E8A2FB /* SharedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedImageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				0CBE64562C619DF500E8A2FB /* InfoView.swift */,
+				0CBE64812C649C7700E8A2FB /* SharedImageView.swift */,
 			);
 			path = "Shared View";
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				0CBE647E2C636BB100E8A2FB /* OverlayView.swift in Sources */,
 				0CBE64762C635B1D00E8A2FB /* ClipShapeView.swift in Sources */,
 				0CBE646C2C633F9400E8A2FB /* Modifier.swift in Sources */,
+				0CBE64822C649C7700E8A2FB /* SharedImageView.swift in Sources */,
 				0CBE64452C6057CD00E8A2FB /* ImageViewApp.swift in Sources */,
 				0CBE64722C63496700E8A2FB /* AspectRatioView.swift in Sources */,
 				0CBE64682C6321E100E8A2FB /* ResizableView.swift in Sources */,

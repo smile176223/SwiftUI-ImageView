@@ -30,50 +30,33 @@ struct ClipShapeView: View {
         case custom
     }
     
-    private let images: [ImageResource] = [.image0, .image1]
-    @State private var currentImage: ImageResource = .image0
-    
     @State private var currentShape: ShapeCase = .circle
     
     var body: some View {
         VStack {
             
-            Text(Modifier.clipShape.title)
+            SharedImageView(modifier: .clipShape) { image in
+                ZStack {
+                    switch currentShape {
+                    case .circle:
+                        Image(image)
+                            .resizable()
+                            .frame(width: 300, height: 300)
+                            .clipShape(Circle())
+                    case .rectangle:
+                        Image(image)
+                            .resizable()
+                            .frame(width: 300, height: 300)
+                            .clipShape(Rectangle())
+                    case .custom:
+                        Image(image)
+                            .resizable()
+                            .frame(width: 300, height: 300)
+                            .clipShape(Diamond())
+                    }
+                }
                 .padding()
-            
-            Picker("Images", selection: $currentImage) {
-                ForEach(images) { image in
-                    Text("\(image.name)")
-                }
             }
-            .pickerStyle(.segmented)
-            .padding([.top, .bottom], 0)
-            .padding([.leading, .trailing], 16)
-            
-            Spacer()
-            
-            ZStack {
-                switch currentShape {
-                case .circle:
-                    Image(currentImage)
-                        .resizable()
-                        .frame(width: 300, height: 300)
-                        .clipShape(Circle())
-                case .rectangle:
-                    Image(currentImage)
-                        .resizable()
-                        .frame(width: 300, height: 300)
-                        .clipShape(Rectangle())
-                case .custom:
-                    Image(currentImage)
-                        .resizable()
-                        .frame(width: 300, height: 300)
-                        .clipShape(Diamond())
-                }
-            }
-            .padding()
-            
-            Spacer()
             
             InfoView(title: "Shape :") {
                 Picker("shape", selection: $currentShape) {
