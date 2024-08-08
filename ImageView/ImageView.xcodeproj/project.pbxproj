@@ -30,6 +30,7 @@
 		0CBE64802C64500B00E8A2FB /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE647F2C64500B00E8A2FB /* BorderView.swift */; };
 		0CBE64822C649C7700E8A2FB /* SharedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64812C649C7700E8A2FB /* SharedImageView.swift */; };
 		0CBE64842C64AFCB00E8A2FB /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64832C64AFCB00E8A2FB /* BackgroundView.swift */; };
+		0CBE64862C64B1B500E8A2FB /* BlendModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64852C64B1B400E8A2FB /* BlendModeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,6 +58,7 @@
 		0CBE647F2C64500B00E8A2FB /* BorderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
 		0CBE64812C649C7700E8A2FB /* SharedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedImageView.swift; sourceTree = "<group>"; };
 		0CBE64832C64AFCB00E8A2FB /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		0CBE64852C64B1B400E8A2FB /* BlendModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendModeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 				0CBE647D2C636BB100E8A2FB /* OverlayView.swift */,
 				0CBE647F2C64500B00E8A2FB /* BorderView.swift */,
 				0CBE64832C64AFCB00E8A2FB /* BackgroundView.swift */,
+				0CBE64852C64B1B400E8A2FB /* BlendModeView.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				0CBE64762C635B1D00E8A2FB /* ClipShapeView.swift in Sources */,
 				0CBE646C2C633F9400E8A2FB /* Modifier.swift in Sources */,
 				0CBE64822C649C7700E8A2FB /* SharedImageView.swift in Sources */,
+				0CBE64862C64B1B500E8A2FB /* BlendModeView.swift in Sources */,
 				0CBE64452C6057CD00E8A2FB /* ImageViewApp.swift in Sources */,
 				0CBE64722C63496700E8A2FB /* AspectRatioView.swift in Sources */,
 				0CBE64682C6321E100E8A2FB /* ResizableView.swift in Sources */,

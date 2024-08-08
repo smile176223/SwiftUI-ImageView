@@ -101,6 +101,8 @@ public enum Modifier: Hashable {
             BorderView()
         case .background:
             BackgroundView()
+        case .blendMode:
+            BlendModeView()
         default:
             Text("Need to implement...")
         }
