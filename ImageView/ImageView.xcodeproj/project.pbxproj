@@ -33,6 +33,7 @@
 		0CBE64862C64B1B500E8A2FB /* BlendModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64852C64B1B400E8A2FB /* BlendModeView.swift */; };
 		0CBE64882C64B64B00E8A2FB /* BrightnessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64872C64B64B00E8A2FB /* BrightnessView.swift */; };
 		0CBE648A2C64B86100E8A2FB /* ContrastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64892C64B86100E8A2FB /* ContrastView.swift */; };
+		0CBE648C2C64BC0E00E8A2FB /* SaturationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE648B2C64BC0E00E8A2FB /* SaturationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		0CBE64852C64B1B400E8A2FB /* BlendModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlendModeView.swift; sourceTree = "<group>"; };
 		0CBE64872C64B64B00E8A2FB /* BrightnessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrightnessView.swift; sourceTree = "<group>"; };
 		0CBE64892C64B86100E8A2FB /* ContrastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContrastView.swift; sourceTree = "<group>"; };
+		0CBE648B2C64BC0E00E8A2FB /* SaturationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaturationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +155,7 @@
 				0CBE64852C64B1B400E8A2FB /* BlendModeView.swift */,
 				0CBE64872C64B64B00E8A2FB /* BrightnessView.swift */,
 				0CBE64892C64B86100E8A2FB /* ContrastView.swift */,
+				0CBE648B2C64BC0E00E8A2FB /* SaturationView.swift */,
 			);
 			path = Modifiers;
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				0CBE64842C64AFCB00E8A2FB /* BackgroundView.swift in Sources */,
 				0CBE645C2C619E3F00E8A2FB /* Image+Extension.swift in Sources */,
 				0CBE64702C6347C000E8A2FB /* ScaledToFillView.swift in Sources */,
+				0CBE648C2C64BC0E00E8A2FB /* SaturationView.swift in Sources */,
 				0CBE648A2C64B86100E8A2FB /* ContrastView.swift in Sources */,
 				0CBE645E2C61ADFF00E8A2FB /* ImageResource+Extension.swift in Sources */,
 				0CBE64472C6057CD00E8A2FB /* ContentView.swift in Sources */,
