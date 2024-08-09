@@ -20,7 +20,7 @@ struct GrayscaleView: View {
                     .frame(width: 300, height: 300)
             }
             
-            InfoView(title: "Amount : \(String(format: "%.1f", amount))") {
+            InfoView(title: "Amount : \(amount.oneDecimalString())") {
                 Slider(value: $amount, in: 0...20)
             }
         }

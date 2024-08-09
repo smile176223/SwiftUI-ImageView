@@ -9,9 +9,9 @@ import SwiftUI
 
 struct ShadowView: View {
     
-    @State private var radius: Double = 5.0
-    @State private var x: Double = 0
-    @State private var y: Double = 0
+    @State private var radius: CGFloat = 5.0
+    @State private var x: CGFloat = 0
+    @State private var y: CGFloat = 0
     
     var body: some View {
         VStack {
@@ -26,13 +26,13 @@ struct ShadowView: View {
                 .padding()
             }
             
-            InfoView(title: "Radius :  \(String(format: "%.1f", radius))") {
+            InfoView(title: "Radius :  \(radius.oneDecimalString())") {
                 Slider(value: $radius, in: 0...100)
             }
-            InfoView(title: "X :  \(String(format: "%.1f", x))") {
+            InfoView(title: "X :  \(x.oneDecimalString())") {
                 Slider(value: $x, in: 0...100)
             }
-            InfoView(title: "Y :  \(String(format: "%.1f", y))") {
+            InfoView(title: "Y :  \(y.oneDecimalString())") {
                 Slider(value: $y, in: 0...100)
             }
         }

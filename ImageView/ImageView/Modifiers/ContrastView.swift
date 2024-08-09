@@ -20,7 +20,7 @@ struct ContrastView: View {
                     .frame(width: 300, height: 300, alignment: .center)
             }
             
-            InfoView(title: "Amount : \(String(format: "%.1f", amount))") {
+            InfoView(title: "Amount : \(amount.oneDecimalString())") {
                 Slider(value: $amount, in: 0...10)
             }
         }

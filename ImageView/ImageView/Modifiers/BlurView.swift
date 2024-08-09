@@ -32,7 +32,7 @@ struct BlurView: View {
             }
             .padding()
             
-            InfoView(title: "Radius : \(String(format: "%.1f", radius))") {
+            InfoView(title: "Radius : \(radius.oneDecimalString())") {
                 Slider(value: $radius, in: 0...100)
             }
         }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OpacityView: View {
     
-    @State private var opacity: Double = 0.5
+    @State private var opacity: CGFloat = 0.5
     
     var body: some View {
         VStack {
@@ -25,7 +25,7 @@ struct OpacityView: View {
                 .padding()
             }
             
-            InfoView(title: "opacity :  \(String(format: "%.1f", opacity))") {
+            InfoView(title: "opacity :  \(opacity.oneDecimalString())") {
                 Slider(value: $opacity, in: 0...1)
             }
         }

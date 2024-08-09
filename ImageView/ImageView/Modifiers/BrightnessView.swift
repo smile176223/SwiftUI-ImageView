@@ -21,7 +21,7 @@ struct BrightnessView: View {
                     .brightness(brightness)
             }
             
-            InfoView(title: "Brightness : \(String(format: "%.1f", brightness))") {
+            InfoView(title: "Brightness : \(brightness.oneDecimalString())") {
                 Slider(value: $brightness, in: 0...1)
             }
             

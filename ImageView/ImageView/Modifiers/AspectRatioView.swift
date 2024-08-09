@@ -55,7 +55,7 @@ struct AspectRatioView: View {
             
             if let _ = ratio {
                 HStack {
-                    Text(String(format: "%.1f", currentRatio))
+                    Text(currentRatio.oneDecimalString())
                     
                     Slider(value: $currentRatio, in: 0.0...5.0)
                         .onChange(of: currentRatio) { _, newValue in

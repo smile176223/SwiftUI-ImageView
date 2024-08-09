@@ -29,10 +29,10 @@ struct FrameView: View {
                 .padding()
             }
             
-            InfoView(title: "width :  \(String(format: "%.1f", width))") {
+            InfoView(title: "width :  \(width.oneDecimalString())") {
                 Slider(value: $width, in: 0...600)
             }
-            InfoView(title: "height :  \(String(format: "%.1f", height))") {
+            InfoView(title: "height :  \(height.oneDecimalString())") {
                 Slider(value: $height, in: 0...600)
             }
         }

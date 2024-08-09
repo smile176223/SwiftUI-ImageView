@@ -20,7 +20,7 @@ struct HueRotationView: View {
                     .frame(width: 300, height: 300)
             }
             
-            InfoView(title: "Angle : \(String(format: "%.1f", angle))") {
+            InfoView(title: "Angle : \(angle.oneDecimalString())") {
                 Slider(value: $angle, in: 0...10)
             }
             
