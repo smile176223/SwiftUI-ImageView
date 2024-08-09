@@ -12,9 +12,6 @@ struct FrameView: View {
     @State private var height: CGFloat = 300
     @State private var width: CGFloat = 300
     
-    private let images: [ImageResource] = [.image0, .image1]
-    @State private var currentImage: ImageResource = .image0
-    
     var body: some View {
         VStack {
             
