@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0CBE64452C6057CD00E8A2FB /* ImageViewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64442C6057CD00E8A2FB /* ImageViewApp.swift */; };
-		0CBE64472C6057CD00E8A2FB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64462C6057CD00E8A2FB /* ContentView.swift */; };
 		0CBE64492C6057CF00E8A2FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CBE64482C6057CF00E8A2FB /* Assets.xcassets */; };
 		0CBE644C2C6057CF00E8A2FB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CBE644B2C6057CF00E8A2FB /* Preview Assets.xcassets */; };
 		0CBE64572C619DF500E8A2FB /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64562C619DF500E8A2FB /* InfoView.swift */; };
@@ -46,7 +45,6 @@
 /* Begin PBXFileReference section */
 		0CBE64412C6057CD00E8A2FB /* ImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CBE64442C6057CD00E8A2FB /* ImageViewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewApp.swift; sourceTree = "<group>"; };
-		0CBE64462C6057CD00E8A2FB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0CBE64482C6057CF00E8A2FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CBE644B2C6057CF00E8A2FB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0CBE64562C619DF500E8A2FB /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
@@ -113,7 +111,6 @@
 			children = (
 				0CBE64582C619E0200E8A2FB /* Helpers */,
 				0CBE64442C6057CD00E8A2FB /* ImageViewApp.swift */,
-				0CBE64462C6057CD00E8A2FB /* ContentView.swift */,
 				0CBE64652C630DF400E8A2FB /* ModifierList.swift */,
 				0CBE64692C63225500E8A2FB /* Modifiers */,
 				0CBE64622C61B6DE00E8A2FB /* Shared View */,
@@ -261,7 +258,6 @@
 				0CBE648C2C64BC0E00E8A2FB /* SaturationView.swift in Sources */,
 				0CBE648A2C64B86100E8A2FB /* ContrastView.swift in Sources */,
 				0CBE645E2C61ADFF00E8A2FB /* ImageResource+Extension.swift in Sources */,
-				0CBE64472C6057CD00E8A2FB /* ContentView.swift in Sources */,
 				0CBE64982C6597EC00E8A2FB /* BlendMode+Extension.swift in Sources */,
 				0CBE646E2C63474A00E8A2FB /* ScaledToFitView.swift in Sources */,
 				0CBE648E2C64BDC000E8A2FB /* HueRotationView.swift in Sources */,
