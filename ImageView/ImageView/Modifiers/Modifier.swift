@@ -115,8 +115,8 @@ public enum Modifier: Hashable {
             GrayscaleView()
         case .blur:
             BlurView()
-        default:
-            Text("Need to implement...")
+        case .rotationEffect:
+            RotationEffectView()
         }
     }
 }

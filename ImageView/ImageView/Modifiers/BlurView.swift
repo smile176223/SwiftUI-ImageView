@@ -14,7 +14,7 @@ struct BlurView: View {
     
     var body: some View {
         VStack {
-            SharedImageView(modifier: .grayscale) { image in
+            SharedImageView(modifier: .blur) { image in
                 Image(image)
                     .resizable()
                     .blur(radius: radius, opaque: opaque)
