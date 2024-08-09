@@ -14,7 +14,7 @@ struct ModifierList: View {
         case effect([Modifier])
     }
     
-    private var sizeModifiers: [Modifier] = [
+    private let sizeModifiers: [Modifier] = [
         .resizable,
         .scaledToFit,
         .scaledToFill,
@@ -24,7 +24,7 @@ struct ModifierList: View {
         .cornerRadius,
     ]
     
-    private var effectModifiers: [Modifier] = [
+    private let effectModifiers: [Modifier] = [
         .opacity,
         .shadow,
         .overlay,
@@ -70,7 +70,6 @@ struct ModifierList: View {
                 }
             }
             .listStyle(PlainListStyle())
-            .padding([.top, .bottom], 5)
             .navigationTitle("Image Modifiers")
             .navigationDestination(for: Modifier.self) { modifier in
                 List {
