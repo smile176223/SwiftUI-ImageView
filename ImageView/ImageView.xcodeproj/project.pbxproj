@@ -38,6 +38,9 @@
 		0CBE64902C64C00600E8A2FB /* GrayscaleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE648F2C64C00600E8A2FB /* GrayscaleView.swift */; };
 		0CBE64922C65926C00E8A2FB /* BlurView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64912C65926C00E8A2FB /* BlurView.swift */; };
 		0CBE64942C6593F000E8A2FB /* RotationEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64932C6593F000E8A2FB /* RotationEffectView.swift */; };
+		0CBE64962C6597BD00E8A2FB /* UnitPoint+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64952C6597BD00E8A2FB /* UnitPoint+Extension.swift */; };
+		0CBE64982C6597EC00E8A2FB /* BlendMode+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64972C6597EC00E8A2FB /* BlendMode+Extension.swift */; };
+		0CBE649A2C65980800E8A2FB /* Alignment+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBE64992C65980800E8A2FB /* Alignment+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +76,9 @@
 		0CBE648F2C64C00600E8A2FB /* GrayscaleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrayscaleView.swift; sourceTree = "<group>"; };
 		0CBE64912C65926C00E8A2FB /* BlurView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlurView.swift; sourceTree = "<group>"; };
 		0CBE64932C6593F000E8A2FB /* RotationEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotationEffectView.swift; sourceTree = "<group>"; };
+		0CBE64952C6597BD00E8A2FB /* UnitPoint+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UnitPoint+Extension.swift"; sourceTree = "<group>"; };
+		0CBE64972C6597EC00E8A2FB /* BlendMode+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BlendMode+Extension.swift"; sourceTree = "<group>"; };
+		0CBE64992C65980800E8A2FB /* Alignment+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alignment+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,9 @@
 				0CBE64592C619E1F00E8A2FB /* ContentMode+Extension.swift */,
 				0CBE645B2C619E3F00E8A2FB /* Image+Extension.swift */,
 				0CBE645D2C61ADFF00E8A2FB /* ImageResource+Extension.swift */,
+				0CBE64952C6597BD00E8A2FB /* UnitPoint+Extension.swift */,
+				0CBE64972C6597EC00E8A2FB /* BlendMode+Extension.swift */,
+				0CBE64992C65980800E8A2FB /* Alignment+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -253,9 +262,11 @@
 				0CBE648A2C64B86100E8A2FB /* ContrastView.swift in Sources */,
 				0CBE645E2C61ADFF00E8A2FB /* ImageResource+Extension.swift in Sources */,
 				0CBE64472C6057CD00E8A2FB /* ContentView.swift in Sources */,
+				0CBE64982C6597EC00E8A2FB /* BlendMode+Extension.swift in Sources */,
 				0CBE646E2C63474A00E8A2FB /* ScaledToFitView.swift in Sources */,
 				0CBE648E2C64BDC000E8A2FB /* HueRotationView.swift in Sources */,
 				0CBE64882C64B64B00E8A2FB /* BrightnessView.swift in Sources */,
+				0CBE64962C6597BD00E8A2FB /* UnitPoint+Extension.swift in Sources */,
 				0CBE64942C6593F000E8A2FB /* RotationEffectView.swift in Sources */,
 				0CBE64802C64500B00E8A2FB /* BorderView.swift in Sources */,
 				0CBE645A2C619E1F00E8A2FB /* ContentMode+Extension.swift in Sources */,
@@ -267,6 +278,7 @@
 				0CBE64862C64B1B500E8A2FB /* BlendModeView.swift in Sources */,
 				0CBE64452C6057CD00E8A2FB /* ImageViewApp.swift in Sources */,
 				0CBE64722C63496700E8A2FB /* AspectRatioView.swift in Sources */,
+				0CBE649A2C65980800E8A2FB /* Alignment+Extension.swift in Sources */,
 				0CBE64682C6321E100E8A2FB /* ResizableView.swift in Sources */,
 				0CBE64742C63598A00E8A2FB /* FrameView.swift in Sources */,
 				0CBE647C2C63684A00E8A2FB /* ShadowView.swift in Sources */,
