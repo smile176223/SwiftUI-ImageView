@@ -9,7 +9,12 @@ import SwiftUI
 
 struct ModifierList: View {
     
-    private var modifiers: [Modifier] = [
+    private enum SectionItem: Hashable {
+        case size([Modifier])
+        case effect([Modifier])
+    }
+    
+    private var sizeModifiers: [Modifier] = [
         .resizable,
         .scaledToFit,
         .scaledToFill,
@@ -17,6 +22,9 @@ struct ModifierList: View {
         .frame,
         .clipShape,
         .cornerRadius,
+    ]
+    
+    private var effectModifiers: [Modifier] = [
         .opacity,
         .shadow,
         .overlay,
@@ -32,11 +40,17 @@ struct ModifierList: View {
         .rotationEffect
     ]
     
-    private var searchResults: [Modifier] {
+    private var searchResults: [SectionItem] {
         if searchText.isEmpty {
-            return modifiers
+            return [
+                .size(sizeModifiers),
+                .effect(effectModifiers)
+            ]
         } else {
-            return modifiers.filter { $0.title.lowercased().contains(searchText.lowercased()) }
+            return [
+                .size(sizeModifiers.filter { $0.title.lowercased().contains(searchText.lowercased()) }),
+                .effect(effectModifiers.filter { $0.title.lowercased().contains(searchText.lowercased()) })
+            ]
         }
     }
     
@@ -45,21 +59,14 @@ struct ModifierList: View {
     var body: some View {
         NavigationStack {
             List {
-                ForEach(searchResults, id: \.self) { modifier in
-                    NavigationLink(value: modifier) {
-                        Text(modifier.title)
-                            .foregroundStyle(.black)
-                            .font(.system(size: 16))
-                            .bold()
+                ForEach(searchResults, id: \.self) { section in
+                    switch section {
+                    case let .size(modifiers):
+                        items(sectionTitle: "Size", modifiers: modifiers)
+                        
+                    case let .effect(modifiers):
+                        items(sectionTitle: "Effect", modifiers: modifiers)
                     }
-                    .padding()
-                    .listRowBackground(Color.clear)
-                    .listRowSeparator(.hidden)
-                    .background(
-                        RoundedRectangle(cornerRadius: 10)
-                            .fill(Color.white)
-                            .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
-                    )
                 }
             }
             .listStyle(PlainListStyle())
@@ -75,6 +82,32 @@ struct ModifierList: View {
         }
         .searchable(text: $searchText, placement: .navigationBarDrawer(displayMode: .always))
         .animation(.default, value: searchResults)
+    }
+    
+    @ViewBuilder
+    private func items(sectionTitle: String, modifiers: [Modifier]) -> some View {
+        Section {
+            ForEach(modifiers, id: \.self) { modifier in
+                NavigationLink(value: modifier) {
+                    Text(modifier.title)
+                        .foregroundStyle(.black)
+                        .font(.system(size: 16))
+                        .bold()
+                }
+                .padding()
+                .listRowBackground(Color.clear)
+                .listRowSeparator(.hidden)
+                .background(
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color.white)
+                        .shadow(color: .gray.opacity(0.4), radius: 5, x: 0, y: 2)
+                )
+            }
+        } header: {
+            Text(sectionTitle)
+                .bold()
+                .font(.title2)
+        }
     }
 }
 
