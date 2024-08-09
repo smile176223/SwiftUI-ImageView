@@ -113,6 +113,8 @@ public enum Modifier: Hashable {
             HueRotationView()
         case .grayscale:
             GrayscaleView()
+        case .blur:
+            BlurView()
         default:
             Text("Need to implement...")
         }
